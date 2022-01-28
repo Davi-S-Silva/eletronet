@@ -28,7 +28,7 @@ Route::get('admin/testezap', function () {
 })->name('testezap');
 Route::get('/play', function () {
     return view('servidorfilmes');
-});
+})->name('Servidor');
 Route::get('/sobre', function () {
     return view('sobre');
 });
