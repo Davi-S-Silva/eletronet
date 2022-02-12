@@ -1,150 +1,175 @@
-body{
-    background-color: #000;
+body {
+    /* background-color: #000; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-a{
+a {
     text-decoration: none;
 }
-ul{
+ul {
     list-style: none;
 }
-.container{
+.container {
     background-color: #fff;
 }
-.container_principal{
+.container_principal {
     /* background-color: darkblue; */
-   /* display:flex;
+    /* display:flex;
    flex-direction: column; */
-   width: 100%;
+    width: 100%;
 }
-.container_principal > header{
+.container_principal > header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100px;
     /* flex-direction: row; */
-    /* background-color: darkolivegreen; */
+    background-color: #00034d;
     align-items: center;
     padding: 10px;
 }
-.container_principal > header figure{
+.container_principal > header figure {
     /* background-color: #ccc; */
     width: 200px;
     height: auto;
     margin: 0;
     padding: 0;
 }
-.container_principal > header figure img{
+.container_principal > header figure img {
     margin: auto;
     width: 100%;
     height: auto;
 }
-nav{
+.container_principal > header > div {
+    /* background-color: rosybrown; */
+}
+.container_principal > header > div ul {
+    /* background-color: aqua; */
+    margin: 0;
+    padding: 0;
+}
+ul li.btn_assinante {
+    background-color: #fff;
+    /* display: block; */
+    width: max-content;
+}
+ul li.btn_assinante:hover {
+    /* border: 1px solid  #fff; */
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+ul li.btn_assinante a {
+    color: #00034d;
+    display: block;
+    /* background-color: rosybrown; */
+    padding: 10px 20px;
+}
+ul li.btn_assinante a:hover {
+    /* color:#fff; */
+}
+
+nav {
     display: flex;
     flex-direction: row;
-    padding: 0;
-    margin: 0;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     /* background-color: darkorchid; */
 }
-nav ul{
+nav ul {
     /* background-color: darkgoldenrod; */
     display: flex;
-    justify-content: center;
+    margin: 0;
     padding: 0;
-    height: auto;
-    margin:  0 5px;
 }
-nav ul li{
+nav ul li {
     height: auto;
     /* background-color: darkmagenta; */
-    padding: 9px 0;
     margin: 0;
+    padding: 5px;
 }
-nav ul li:hover{
-    background-color: rgba(17, 52, 167, 0.8)   
+nav ul li:hover {
+    /* background-color: rgba(17, 52, 167, 0.8) */
+    background-color: #fff;
+    border-radius: 10px;
 }
-nav ul li a{
+nav ul li a {
     padding: 10px 10px;
-    font-weight:400;
+    font-weight: 400;
     font-variant: small-caps;
     color: #fff;
     /* background-color: darkgreen; */
     margin: 0;
 }
-nav ul li a:hover{
-    color: rgb(243, 235, 127);
+nav ul li a:hover {
+    /* color: rgb(243, 235, 127); */
+    color: #00034d;
 }
-nav ul li.btn_assinante{
-    /* background-color: darkmagenta; */
-    border-radius: 50px;
-    border: 1px solid  rgb(127, 164, 243);
+
+.ul_btn_admin {
+    background-color: #fff;
+    border-radius: 10px;
 }
-nav ul li.btn_assinante:hover{
-    border: 1px solid  #fff;
+.ul_btn_admin a {
+    color: #00034d;
 }
-nav ul li.btn_assinante a{
-    color: rgb(127, 164, 243);
-}
-nav ul li.btn_assinante a:hover{
-    color:#fff;
-}
-.container, .container-fluid{
+.container,
+.container-fluid {
     /* background-color: #f00;     */
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
-
-.content{
+.content {
     background-color: #fff;
     min-height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.banner{
+.banner {
     /* min-height: 400px; */
     /* background-color: darkolivegreen; */
     /* display: flex;
     flex-direction: column; */
 }
-.banner img,.box_2 img, .sobre img{
+.banner img,
+.box_2 img,
+.sobre img {
     margin: auto;
     width: 100%;
     height: auto;
     /* background-color: aqua; */
 }
-.box_2{
+.box_2 {
     display: flex;
     justify-content: space-around;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
 }
-.box_2 div{
+.box_2 div {
     /* background-color: darkorange; */
     padding: 70px;
 }
-.box_3 div, .box_4 div{
+.box_3 div,
+.box_4 div {
     background-color: indigo;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color:#fff;
+    color: #fff;
 }
-.box_3 ul, .box_4 ul{
+.box_3 ul,
+.box_4 ul {
     display: flex;
     margin: 0;
     padding: 0;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.box_3 ul li, .box_4 ul li{
+.box_3 ul li,
+.box_4 ul li {
     /* background-color: darkorange; */
     display: flex;
     flex-direction: column;
@@ -156,87 +181,93 @@ nav ul li.btn_assinante a:hover{
 }
 
 /*========SERVICOS========*/
-.box_4 h6, .box_3 h6{
+.box_4 h6,
+.box_3 h6 {
     padding: 10px;
 }
-.box_4 ul{
+.box_4 ul {
     margin-top: 22px;
 }
-.box_4 ul li, .box_3 ul li{
+.box_4 ul li,
+.box_3 ul li {
     /* flex-direction: row; */
     /* display: block; */
     height: fit-content;
-    border:1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     /* background-color: aqua; */
     margin: 5px;
     padding: 20px;
     box-sizing: content-box;
     /* flex-wrap: wrap; */
 }
-.box_4 ul li:hover, .box_3 ul li:hover{
+.box_4 ul li:hover,
+.box_3 ul li:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
-.box_3 ul li > i ,.box_4 ul li > i{
+.box_3 ul li > i,
+.box_4 ul li > i {
     font-size: 20pt;
 }
-.box_4 ul li div{
+.box_4 ul li div {
     display: flex;
     flex-direction: row;
     border-radius: 50px;
     padding: 5px;
 }
-.box_4 ul li a:hover{
+.box_4 ul li a:hover {
     text-decoration: underline;
 }
-.box_4 ul li a, .box_4 ul li i, .box_3 ul li i{
+.box_4 ul li a,
+.box_4 ul li i,
+.box_3 ul li i {
     color: rgb(228, 213, 0);
-    padding:2px;
+    padding: 2px;
     text-indent: 0;
 }
-.box_4 ul li p{
+.box_4 ul li p {
     color: #ccc;
 }
 /* .box_4 ul li i, .box_4 ul li h3, .box_4 ul li p {
     background-color: bisque;
     float: left;
 } */
-.box_planos{
+.box_planos {
     background-color: blueviolet;
     padding: 75px 0;
 }
-.box_planos > ul{
+.box_planos > ul {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
     padding: 0;
     flex-wrap: wrap;
 }
-.box_planos > ul li{
+.box_planos > ul li {
     padding: 5px;
     background-color: #fff;
     margin: 5px;
     text-align: center;
     height: fit-content;
 }
-.box_planos > ul li h1{
+.box_planos > ul li h1 {
     color: #fff;
     text-align: center;
     font-size: 15pt;
     background-color: rgb(224, 153, 20);
     padding: 5px;
 }
-.box_planos > ul li footer{
+.box_planos > ul li footer {
     text-align: center;
     /* background-color: darkgreen; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.box_planos > ul li footer span{
+.box_planos > ul li footer span {
     color: rgb(224, 153, 20);
     font-weight: bold;
 }
-.box_planos > ul li footer a{
+.box_planos > ul li footer a {
     /* border:1px solid #00f; */
     border-radius: 50px;
     padding: 5px 10px;
@@ -245,93 +276,91 @@ nav ul li.btn_assinante a:hover{
     background-color: rgb(224, 153, 20);
     font-weight: bold;
 }
-.box_planos > ul li ul{
+.box_planos > ul li ul {
     /* background-color: orangered; */
     /* list-style: circle; */
     margin: 0;
     padding: 0;
 }
-.box_duvidas{
+.box_duvidas {
     background-color: aquamarine;
 }
-.box_duvidas > header{
+.box_duvidas > header {
     /* background-color: crimson; */
     text-align: center;
 }
-.box_duvidas ul{
+.box_duvidas ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 70%;
     margin: 0 auto;
 }
-.box_duvidas ul li{
+.box_duvidas ul li {
     width: 48%;
     /* background-color: blanchedalmond; */
     display: flex;
     align-items: flex-start;
     height: fit-content;
 }
-.box_duvidas ul li>div, .box_duvidas ul li article{
+.box_duvidas ul li > div,
+.box_duvidas ul li article {
     /* background-color: chartreuse; */
     margin: 5px;
 }
-.box_duvidas ul li>div{
+.box_duvidas ul li > div {
     padding: 5px;
 }
-.box_duvidas ul li article header{
+.box_duvidas ul li article header {
     /* background-color: crimson; */
     padding: 5px;
     margin: 0;
     height: fit-content;
 }
 
-
-
-form{
+form {
     padding: 5px;
     /* background-color: crimson; */
     margin: auto;
 }
-form div{
+form div {
     padding: 5px;
 }
-form div label{
+form div label {
     margin: 5px 0;
 }
 
-
-
-
-.sobre{
+.sobre {
     display: flex;
     justify-content: center;
     /* align-items: center; */
     flex-wrap: wrap;
     margin: auto;
 }
-.sobre figure, .sobre>div{
+.sobre figure,
+.sobre > div {
     /* background-color: aquamarine; */
     padding: 5px;
 }
-.sobre figure{
+.sobre figure {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cobertura{
+.cobertura {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contato{
+.contato {
     /* background-color: darkgreen; */
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
-.contato form, .contato figure{
+.contato form,
+.contato figure {
     /* background-color: darkmagenta; */
     margin: 5px;
     padding: 5px;
@@ -339,43 +368,80 @@ form div label{
     justify-content: center;
     flex-direction: column;
 }
-.rodape{
-    /* background-color: cyan; */
-    height: 100px;
-    color:#fff;
+.rodape {
+    background-color: #00034d;
+    height: max-content;
+    color: #fff;
     text-align: center;
 }
-.rodape ul{
+.rodape > ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
-.rodape ul li ul:last-child{
+.rodape > ul li ul:last-child {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-}    
-.rodape ul li{
+}
+.rodape > ul li {
     margin: 5px;
     height: fit-content;
+    /* background-color: blueviolet; */
 }
-.rodape .logo_rodape{
+.rodape .logo_rodape {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.rodape .logo_rodape figure{
+.rodape .logo_rodape figure {
     width: 20%;
     height: auto;
 }
-.rodape .logo_rodape figure img{
+.rodape .logo_rodape figure img {
     width: 100%;
     height: auto;
 }
-.volta_topo{
+.contatos_redes {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.contatos_redes div:last-child {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+.contatos_redes div:last-child figure {
+    margin: 2px;
+    padding: 0;
+}
+.contatos_redes div:last-child figure i {
+    font-size: 15pt;
+}
+.menu_rodape {
+    /* background-color: aqua; */
+    width: max-content;
+    margin: 0 auto;
+}
+.copy_end {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+.copy_end p {
+    margin: 0;
+    padding: 2px;
+    line-height: 15px;
+}
+.volta_topo {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -383,7 +449,7 @@ form div label{
     background-color: cyan;
     cursor: pointer;
 }
-.volta_topo a{       
+.volta_topo a {
     /* background-color: khaki; */
     padding: 10px;
     margin: 2px;

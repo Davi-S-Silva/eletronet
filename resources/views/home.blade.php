@@ -4,7 +4,7 @@
     Página inicial - Sejam Bem Vindos!
 @endsection
 
-@section('content')    
+@section('content')
     <section class="box_1">
         <div class="banner">
             <figure>
@@ -17,7 +17,7 @@
             <h2>Vivencie a melhor experiencia na internet</h2>
             <p>
                 It has survived not only five centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of
                 Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                 software like Aldus PageMaker including versions of Lorem Ipsum
             </p>
@@ -35,7 +35,7 @@
     <section class="box_4" id="Servicos">
         <div class="">
             <h6>Nossos Diferenciais <i class="fa fa-gear"></i></h6>
-            
+
             <h3>Somos o provedor de internet que mais cresce na região</h3>
             <ul class="col-12">
                 <li class="col-sm-12 col-md-3">
@@ -95,9 +95,9 @@
                 </li>
             </ul>
         </div>
-    </section>   
-   
-    <section class="box_planos" id="Planos">        
+    </section>
+
+    <section class="box_planos" id="Planos">
         <ul>
             {{-- <li class="col-xl-2 col-lg-3 col-md-5 col-11">
                 <header>
@@ -231,7 +231,9 @@
             </li>
         </ul>
     </section>
-
+    <section>
+        <h2>Comentarios dos clientes</h2>
+    </section>
     <section class="box_duvidas" id="Duvidas">
         <header>
             <h4>duvidas frequente</h4>

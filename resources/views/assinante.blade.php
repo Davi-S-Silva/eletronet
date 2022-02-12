@@ -21,8 +21,8 @@
             <input class="btn btn-primary" type="button" name="" id="" value="Logar">
         </div>
         <div>
-            <p>Ainda não é cliente? <a href="#">Assinar</a></p>
+            <p>Ainda não é cliente? <a href="{{route('assinar')}}">Assinar</a></p>
         </div>
     </form>
-    
+
 @endsection

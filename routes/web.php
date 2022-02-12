@@ -20,7 +20,7 @@ use App\Http\Controllers\ApiMikrotikController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 
 Route::get('admin/testezap', function () {
@@ -44,9 +44,16 @@ Route::get('/contato', function () {
 Route::get('/assinante', function () {
     return view('assinante');
 })->name('assinante');
+Route::get('/assinar', function () {
+    return view('assinar');
+})->name('assinar');
 Route::get('/cobertura', function () {
     return view('cobertura');
 });
+
+//=======================ADMIN============================//
+
+//rotas para admin
 Route::get('/admin', function () {
     return view('admin.admin');
 })->name('admin');
@@ -100,11 +107,15 @@ Route::get('/sair', function () {
 
 
 // TESTE ajax
+Route::get('admin/novaApi', [ApiMkauthController::class,'novaApi'])->name('novaApi');
 Route::get('admin/atualizaMkauth', [ApiMkauthController::class,'atualizaClientes'])->name('atualizaMkauth');
 Route::get('/separaClientes', [ApiMkauthController::class,'SeparaClientes'])->name('separa');
 Route::get('admin/countClientesAtivos', [ApiMkauthController::class,'getCountClientesAtivos'])->name('countClientesAtivos');
 Route::get('admin/countClientesConectados', [ApiMikrotikController::class,'getCountAllUserActive'])->name('getCountAllUserActive');
 Route::get('admin/countClientesDesconectados', [ApiMkauthController::class,'getCountDesconectados'])->name('countClientesDesconectados');
 Route::get('admin/countClientesBloqueados', [ApiMkauthController::class,'getCountClientesBloqueados'])->name('countClientesBloqueados');
+
+Route::get('admin/getClientesDesconectados', [ApiMkauthController::class,'getClientesDesconectados'])->name('getClientesDesconectados');
+Route::get('admin/getClientesBloqueados', [ApiMkauthController::class,'getClientesBloqueados'])->name('getClientesBloqueados');
 
 Route::resource('novocontato', ContatoController::class);

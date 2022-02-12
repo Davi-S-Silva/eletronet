@@ -1,111 +1,112 @@
-body, html{
-  width:100%;
-  height: 100%;
-  /* background-color: #ccc; */
+body,
+html {
+    width: 100%;
+    height: 100%;
+    /* background-color: #ccc; */
 }
-.container, .container-fluid{
+.container,
+.container-fluid {
     /* background-color: peru; */
 }
-.area-login{
-  height: 100%;
-   /* d-flex flex-column justify-content-center */
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+.area-login {
+    height: 100%;
+    /* d-flex flex-column justify-content-center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.content-form-login{
-  align-self: center;
-  padding: 5px;
-  border: 1px solid #4298f5;
-  border-radius: 10px;
-  text-align: center;
+.content-form-login {
+    align-self: center;
+    padding: 5px;
+    border: 1px solid #4298f5;
+    border-radius: 10px;
+    text-align: center;
 }
-.content-form-login form{
-  flex-direction: column;
-  padding: 5px;
+.content-form-login form {
+    flex-direction: column;
+    padding: 5px;
 }
-.content-form-login form div{
-  margin: 5px 0;
-  text-align: center;
+.content-form-login form div {
+    margin: 5px 0;
+    text-align: center;
 }
-.content-form-login form div input{
-  padding: 10px;
+.content-form-login form div input {
+    padding: 10px;
 }
 .content-form-login form div input[type="submit"],
-.content-form-login form div input[type="reset"]{
-  width: 30%;
+.content-form-login form div input[type="reset"] {
+    width: 30%;
 }
-.container-fluid{
+.container-fluid {
     margin: 0;
     padding: 0;
     /* background-color: #00f; */
     height: 100%;
 }
-.my-alert{
-  position: absolute;
-  z-index: 1000;
-  top:20px;
-  padding: 10px;
+.my-alert {
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    padding: 10px;
 }
-.my-alert ul{
-  margin: 0;
-  padding: 10px;
+.my-alert ul {
+    margin: 0;
+    padding: 10px;
+}
+.container_flex {
+    display: flex;
+    width: 100%;
+    /* background-color: #00f; */
+    height: auto;
+}
+.content_right {
+    width: 100%;
+    /* background-color: #f00; */
+}
 
-}
-.container_flex{
-  display: flex;
-  width: 100%;
-  /* background-color: #00f; */
-  height: auto;
-}
-.content_right{
-  width: 100%;
-  /* background-color: #f00; */
-}
-
-header#Topo{
+header#Topo {
     /* background-color: palevioletred; */
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 /* MENU PRINCIPAL */
-.menu_principal{
-  background-color: #000;
-  width: fit-content;
-  min-width: 180px;
-  /* position: fixed; */
+.menu_principal {
+    background-color: #000;
+    width: fit-content;
+    min-width: 180px;
+    /* position: fixed; */
 }
-.menu_principal li{
-  /* background-color: #f0f; */
-  margin: 0 0 1px 0;
+.menu_principal li {
+    /* background-color: #f0f; */
+    margin: 0 0 1px 0;
 }
-.menu_principal a{
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  padding: 2px 20px 2px 5px;
+.menu_principal a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 2px 20px 2px 5px;
 }
-.menu_principal a:hover{
-  background-color: #fff;
-  color: #000;
+.menu_principal a:hover {
+    background-color: #fff;
+    color: #000;
 }
-.menu_principal li ul{
-  /* display: none; */
-  text-indent: 20px;
+.menu_principal li ul {
+    /* display: none; */
+    text-indent: 20px;
 }
-.menu_principal li:hover ul{
-  display: block;
+.menu_principal li:hover ul {
+    display: block;
 }
 /* CONTENT */
-.content{
+.content {
     /* background-color: #f0f; */
     display: flex;
     flex-direction: column;
@@ -113,60 +114,77 @@ ul{
     justify-content: center;
 }
 /* CONTENT HOME */
-.content_home{
-  /* background-color: #0f0; */
+.content_home {
+    /* background-color: #0f0; */
 }
-.header_content_home ul{
-  /* background-color: #00f; */
-  display: flex;
+.header_content_home ul {
+    /* background-color: #00f; */
+    display: flex;
 }
-.header_content_home ul li{
-  padding: 5px 10px;
-  margin: 5px 10px;
-  min-width: 150px;
-  width: fit-content;
-  text-align: center;
-  color: #fff;
+.header_content_home ul li {
+    padding: 5px 10px;
+    margin: 5px 10px;
+    min-width: 150px;
+    width: fit-content;
+    text-align: center;
+    color: #fff;
 }
 
-.load{
-  background-color: #ccc;
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
+.load {
+    background-color: #ccc;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
 }
-.total_clientes_ativos{
+.total_clientes_ativos {
     background-color: #00f;
 }
-.total_clientes_conectados{
-  background-color: #0ea300;
+.total_clientes_conectados {
+    background-color: #0ea300;
 }
-.total_clientes_desconectados{
-  background-color: #f00;
+.total_clientes_desconectados {
+    background-color: #f00;
 }
 
-.grafico_1{
-  width: 200px;
+.grafico_1 {
+    width: 200px;
+}
+.getClientesDesconectadosBloqueados {
+    background-color: #ccc;
+    display: flex;
+}
+.list_clientes_include_view {
+    display: flex;
+}
+.list_clientes {
+    /* background-color: #4298f5; */
+    /* width: fit-content; */
+}
+.list_clientes li {
+    background-color: #b6d0ec;
+    width: fit-content;
+    margin-bottom: 1px;
+    padding: 5px;
 }
 /*======================*/
 
-#VlansClientes{
+#VlansClientes {
     /* background-color: darkgreen; */
     display: flex;
     flex-wrap: wrap;
-    justify-content:center ;
+    justify-content: center;
     align-items: flex-start;
     width: 100%;
 }
-.vlansclientes{
+.vlansclientes {
     /* background-color: rgb(226, 33, 33); */
     margin-left: 2.5px;
     padding: 5px;
     width: max-content;
 }
-.clientevlan{
+.clientevlan {
     width: 100%;
     padding: 5px;
     border-bottom: 1px solid darkgrey;
@@ -177,17 +195,17 @@ ul{
     /* flex-wrap: wrap;
     justify-content: space-around; */
 }
-.clientevlan div{
+.clientevlan div {
     display: flex;
     /* background-color: darkkhaki; */
     justify-content: space-around;
     width: 100%;
 }
-.clientevlan a{
+.clientevlan a {
     width: fit-content;
     text-decoration: none;
 }
-form{
+form {
     /* background-color: red; */
     display: flex;
     justify-content: center;
@@ -207,12 +225,12 @@ form{
     margin: 2px;
     padding: 0;
 } */
-#FormEmpresa{
+#FormEmpresa {
     flex-direction: column;
     align-items: center;
     width: 30%;
 }
-.content div:last-child form{
+.content div:last-child form {
     /* background-color: turquoise; */
     width: min-content;
     height: 100%;
@@ -220,24 +238,24 @@ form{
     flex-direction: column;
     justify-content: space-between;
 }
-.content div:last-child form div{
+.content div:last-child form div {
     /* background-color: lavender; */
 }
-.content div:last-child section label{
+.content div:last-child section label {
     width: 100%;
     padding: 5px;
     text-align: center;
     /* background-color: lawngreen; */
 }
-.content div:last-child form input{
+.content div:last-child form input {
     width: 300px;
     margin: 5px;
 }
-.content div:last-child form input[type="time"]{
+.content div:last-child form input[type="time"] {
     width: 140px;
     float: left;
 }
-.content div:last-child form input[type="submit"]{
+.content div:last-child form input[type="submit"] {
     height: fit-content;
     width: fit-content;
     margin: 10px auto;

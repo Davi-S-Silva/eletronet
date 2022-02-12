@@ -12,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{asset('site/css/layout.css')}}">
     <script src="{{asset('site/js/layout.js')}}"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('site/imagens')}}/favicon-96x96.png">
     <title>Eletronet - @yield('title')</title>
 </head>
 <body>

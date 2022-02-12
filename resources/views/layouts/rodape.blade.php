@@ -4,10 +4,15 @@
             <a href="#Topo"><i class="fa fa-arrow-up"></i></a>
         </div>
         <ul>
-            <li><i class="fa fa-phone"></i> Fale conosco
-                <figure><a href="https://www.instagram.com/eletronetsocorro" target="_blank"><i class="fa-brands fa-instagram"> eletronetsocorro</i></a></figure>
-                <figure><a href="#"><i class="fa-brands fa-facebook"> Facebook</i></a></figure>
-                <figure><a href="#"><i class="fa-brands fa-whatsapp"> Whatsapp</i></a></figure>
+            <li class="contatos_redes">
+                <div>
+                    <i class="fa fa-phone"></i> Fale conosco
+                </div>
+                <div>
+                    <figure title="link para a pagina do instagram da eletronet socorro"><a href="https://www.instagram.com/eletronetsocorro" target="_blank"><i class="fa-brands fa-instagram"></i></a></figure>
+                    <figure title="link para a pagina do facebook da eletronet socorro"><a href="https://www.facebook.com/eletronetsocorro" target="_blank"><i class="fa-brands fa-facebook"></i></a></figure>
+                    <figure title="link para enviar mensagem no whatsapp da eletronet socorro"><a href="https://wa.me/+5581988721029" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></figure>
+                </div>
             </li>
             <li><i class="fa-solid fa-envelope"></i> Envie-nos uma mensagem</li>
             <li><i class="fa-solid fa-location-dot"></i> Nossa Localização</li>
@@ -20,9 +25,12 @@
             </li>
         </ul>
         <section>
-            <div class="logo_rodape"><figure><img src="{{asset('site/imagens/layout/logo.png')}}" alt="#"></figure><article>texto resumido da empresa</article></div>
-            <div><h5>Links Rápido</h5>
-                <ul>
+            <div class="logo_rodape">
+                <figure><img src="{{ asset('site/imagens/layout/logo.png') }}" alt="#"></figure>
+            </div>
+            <div class="menu_rodape">
+                {{-- <h5>Links Rápido</h5> --}}
+                {{-- <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="sobre">Sobre</a></li>
                     <li><a href="contato">Contato</a></li>
@@ -30,17 +38,21 @@
                     <li><a href="planos">Planos</a></li>
                     <li><a href="servicos">Serviços</a></li>
                     <li><a href="assinante">Assinante</a></li>
-                </ul>
+                </ul> --}}
+                @include('layouts.menu')
             </div>
-            <div>
+            {{-- <div>
                 <header>Newsletter</header>
                 <form action="" method="post">
                     @csrf
                     <input type="email" name="" id="" placeholder="Digite seu email">
                     <input type="submit" value="Cadastrar">
                 </form>
-            </div>
+            </div> --}}
         </section>
-        <div><p>&copy; copyright Todos os direitos reservados - Eletronet 2021.</p></div>
+        <div class="copy_end">
+            <p>&copy; <b> copyright - Eletronet 2021</b> - Todos os direitos reservados.</p>
+            <p>Rua 3ª Travessa Parnaiba, Socorro, Jaboatão dos Guararapes</p>
+        </div>
     </section>
 @show

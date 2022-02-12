@@ -45,6 +45,11 @@ class ApiMkauthController extends Controller
         print_r($this->TodosClientes);
         echo '</pre>';
     }
+    public function novaApi()
+    {
+        $mkauth = new Mkauth();
+        return $mkauth->novaApi();
+    }
     public function getAllClientes($atualiza = false)
     {
       // session()->forget('Clientes');    return;
@@ -123,6 +128,7 @@ class ApiMkauthController extends Controller
     }
     public function getClientesBloqueados()
     {
+        $this->TodosClientes = session('Clientes');
         return $this->TodosClientes['bloqueados'];
     }
     public function getCountClientesBloqueados()
@@ -143,7 +149,15 @@ class ApiMkauthController extends Controller
             $conectados[] = strtolower($ativos[$i]['name']);
         }
         $desconectados = array_diff($Clientes, $conectados);
-        return $desconectados;
+
+        for ($i = 0; $i < count($this->TodosClientes['ativos']); $i++) {
+            foreach ($desconectados as $cli) {
+                if ($cli == strtolower($this->TodosClientes['ativos'][$i]['login'])) {
+                    $ClientesDesconectados[] = $this->TodosClientes['ativos'][$i];
+                }
+            }
+        }
+        return $ClientesDesconectados;
     }
     public function getCountDesconectados()
     {
